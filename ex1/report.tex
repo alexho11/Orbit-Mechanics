@@ -120,26 +120,25 @@ The five satellite orbit in 2D plane are shown in Figure \ref{fig:2D_orbit}. The
 We also have to plot the mean anomaly $M$, the eccentric anomaly $E$ and the true anomaly $\nu$ over 12 hours for the GPS and Molniya satellite.
 \begin{figure}[H]
     \centering
-    \begin{subfigure}[b]{0.45\textwidth}
-    \includegraphics[width=\textwidth]{plots/MM.png}
-    \caption{Mean anomaly}
-    \label{fig:M}
-    \end{subfigure}
-    \begin{subfigure}[b]{0.45\textwidth}
-    \includegraphics[width=\textwidth]{plots/MG.png}
-    \caption{Eccentric anomaly}
-    \label{fig:E}
-    \end{subfigure}
+    \includegraphics[width=0.8\textwidth]{plots/MG.png}
+    \caption{Mean, eccentric and true anomaly of GPS}
+    \end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{plots/MM.png}
+    \caption{Mean, eccentric and true anomaly of Molniya}
 \end{figure}
+We can observe that the mean anomaly $M$ is a linear function of time. The orbit of GPS is nearly circular, since the true anomaly $\nu$ increases similar with mean anomaly. On the other hand, the orbit of Molniya is highly eccentric, since the true anomaly $\nu$ increases in a periodic matter. 
 \subsection*{Space-fixed inertial system}
-In this second task we have to transform the satellite postion and velocity from the perifocal $f$-frame of 2D plane to the cartesian coordinates of 3D space in an inertial space fixed system. 
+In this second task we want to transform the satellite postion and velocity from the perifocal $f$-frame of 2D plane to the cartesian coordinates of 3D space in an inertial space fixed system. 
 \begin{align*}
     \boldsymbol{r}_i=\boldsymbol{R}_3(-\Omega)\boldsymbol{R}_1(-i)\boldsymbol{R}_3(-\omega)\boldsymbol{r}_f\\
     \dot{\boldsymbol{r}}_i=\boldsymbol{R}_3(-\Omega)\boldsymbol{R}_1(-i)\boldsymbol{R}_3(-\omega)\dot{\boldsymbol{r}}_f
 \end{align*}
+After transformation we can plot the 3D orbit and the projection of 3D orbit and velocity. The 3D orbit is shown in Figure \ref{fig:3D_orbit}. The projection of 3D orbit and velocity are shown in Figure \ref{fig:images}. The orbits of GOCE and GPS are nearly circular. The orbit of Molniya is a highly eccentric orbit. The orbit of GEO is a circular orbit, and the orbit of Michibiki is a elliptical orbit. In the velocity plot we see that the velocity of Molniya changes periodicly over time, while the other satellites have only slight changes in velocity. 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.7\textwidth]{plots/orb3d.png}
+    \includegraphics[width=0.65\textwidth]{plots/orb3d.png}
     \caption{3D orbit}
     \label{fig:3D_orbit}
 \end{figure}
@@ -147,25 +146,21 @@ In this second task we have to transform the satellite postion and velocity from
     \centering
     \begin{subfigure}[b]{0.45\textwidth}
         \includegraphics[width=\textwidth]{plots/orbxy.png}
-        \caption{Caption for image 1}
         \label{fig:image1}
     \end{subfigure}
     \begin{subfigure}[b]{0.45\textwidth}
         \includegraphics[width=\textwidth]{plots/orbxz.png}
-        \caption{Caption for image 2}
         \label{fig:image2}
     \end{subfigure}
     \begin{subfigure}[b]{0.45\textwidth}
         \includegraphics[width=\textwidth]{plots/orbyz.png}
-        \caption{Caption for image 3}
         \label{fig:image3}
     \end{subfigure}
     \begin{subfigure}[b]{0.45\textwidth}
         \includegraphics[width=\textwidth]{plots/velocity.png}
-        \caption{Caption for image 4}
         \label{fig:image4}
     \end{subfigure}
-    \caption{Caption for the whole figure}
+    \caption{Projection of 3D orbit and velocity}
     \label{fig:images}
 \end{figure}
 \section*{Earth-fixed system}
@@ -174,7 +169,7 @@ In this task we have to transform the satellite postion and velocity from the ca
     \theta&=\dot{\Omega}_Et+\text{sidereal angle}\\
     \boldsymbol{r}_e&=\boldsymbol{R}_3(-\theta)\boldsymbol{r}_i
 \end{align*}
-which $\dot{\Omega}_E$ is the Earth rotation rate. The Earth rotation rate is calculated by $\frac{2\pi}{86164}$. The sidereal angle is the angle between the Greenwich meridian and the equinox. The satellite position in Earth-fixed system is shown in Figure \ref{fig:earth_fixed}.
+which $\dot{\Omega}_E$ is the Earth rotation rate. The Earth rotation rate is calculated by $\frac{2\pi}{86164}$. The sidereal angle is the angle between the Greenwich meridian and the equinox. In this exercise we use a sidereal angle of 3 hours. The satellite position in Earth-fixed system is shown in Figure \ref{fig:earth_fixed}.
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.7\textwidth]{plots/orbefix.png}
@@ -186,6 +181,7 @@ The satellite ground-tracks on the Earth surface will also be calculated and sho
     \lambda&=\arctan\left(\frac{y}{x}\right)\\
     \phi&=\arctan\left(\frac{z}{\sqrt{x^2+y^2}}\right)
 \end{align*}
+After calculation we get the ground-track of the satellites. The GEO satellite stays at the same position on the Earth surface, since the GEO satellite is a geostationary satellite. And the ground track of the Michibiki satellite is a figure of eight.
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.7\textwidth]{plots/groundtrack.png}

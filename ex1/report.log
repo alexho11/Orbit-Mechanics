@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.5.6)  4 DEC 2023 20:30
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.5.6)  5 DEC 2023 20:43
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -504,9 +504,9 @@ Package: verbatim 2022-07-02 v1.5u LaTeX2e package for verbatim enhancements
 Package: catchfile 2019/12/09 v1.8 Catch the contents of a file (HO)
 )
 \verbatim@out=\write4
-runsystem(echo t > "w18-test-20231241230.tex")...disabled (restricted).
+runsystem(echo t > "w18-test-20231251243.tex")...disabled (restricted).
 
-runsystem(del "w18-test-20231241230.tex")...disabled (restricted).
+runsystem(del "w18-test-20231251243.tex")...disabled (restricted).
 
 
 
@@ -787,41 +787,49 @@ Package fancyhdr Warning: \headheight is too small (18.125pt):
 [1{/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}
 
 ]
-<plots/MM.png, id=28, 1124.2pt x 843.15pt>
-File: plots/MM.png Graphic file (type png)
-<use plots/MM.png>
-Package pdftex.def Info: plots/MM.png  used on input line 124.
-(pdftex.def)             Requested size: 204.85846pt x 153.6388pt.
-<plots/MG.png, id=29, 1124.2pt x 843.15pt>
+<plots/MG.png, id=28, 1124.2pt x 843.15pt>
 File: plots/MG.png Graphic file (type png)
 <use plots/MG.png>
-Package pdftex.def Info: plots/MG.png  used on input line 129.
-(pdftex.def)             Requested size: 204.85846pt x 153.6388pt.
-Package hyperref Info: bookmark level for unknown subfigure defaults to 0 on input line 133.
-<plots/orb3d.png, id=30, 1124.2pt x 843.15pt>
+Package pdftex.def Info: plots/MG.png  used on input line 123.
+(pdftex.def)             Requested size: 364.19667pt x 273.14565pt.
+<plots/MM.png, id=29, 1124.2pt x 843.15pt>
+File: plots/MM.png Graphic file (type png)
+<use plots/MM.png>
+Package pdftex.def Info: plots/MM.png  used on input line 128.
+(pdftex.def)             Requested size: 364.19667pt x 273.14565pt.
+
+
+Package fancyhdr Warning: \headheight is too small (18.125pt): 
+(fancyhdr)                Make it at least 27.11469pt, for example:
+(fancyhdr)                \setlength{\headheight}{27.11469pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-8.98969pt}.
+
+[2 <./plots/orb2d.png (PNG copy)> <./plots/MG.png (PNG copy)>]
+<plots/orb3d.png, id=37, 1124.2pt x 843.15pt>
 File: plots/orb3d.png Graphic file (type png)
 <use plots/orb3d.png>
-Package pdftex.def Info: plots/orb3d.png  used on input line 142.
-(pdftex.def)             Requested size: 318.66948pt x 239.00084pt.
-<plots/orbxy.png, id=31, 1124.2pt x 843.15pt>
+Package pdftex.def Info: plots/orb3d.png  used on input line 141.
+(pdftex.def)             Requested size: 295.90588pt x 221.92842pt.
+<plots/orbxy.png, id=38, 1124.2pt x 843.15pt>
 File: plots/orbxy.png Graphic file (type png)
 <use plots/orbxy.png>
-Package pdftex.def Info: plots/orbxy.png  used on input line 149.
+Package pdftex.def Info: plots/orbxy.png  used on input line 148.
 (pdftex.def)             Requested size: 204.85846pt x 153.6388pt.
-<plots/orbxz.png, id=32, 1124.2pt x 843.15pt>
+<plots/orbxz.png, id=39, 1124.2pt x 843.15pt>
 File: plots/orbxz.png Graphic file (type png)
 <use plots/orbxz.png>
-Package pdftex.def Info: plots/orbxz.png  used on input line 154.
+Package pdftex.def Info: plots/orbxz.png  used on input line 152.
 (pdftex.def)             Requested size: 204.85846pt x 153.6388pt.
-<plots/orbyz.png, id=33, 1124.2pt x 843.15pt>
+<plots/orbyz.png, id=40, 1124.2pt x 843.15pt>
 File: plots/orbyz.png Graphic file (type png)
 <use plots/orbyz.png>
-Package pdftex.def Info: plots/orbyz.png  used on input line 159.
+Package pdftex.def Info: plots/orbyz.png  used on input line 156.
 (pdftex.def)             Requested size: 204.85846pt x 153.6388pt.
-<plots/velocity.png, id=34, 1124.2pt x 843.15pt>
+<plots/velocity.png, id=41, 1124.2pt x 843.15pt>
 File: plots/velocity.png Graphic file (type png)
 <use plots/velocity.png>
-Package pdftex.def Info: plots/velocity.png  used on input line 164.
+Package pdftex.def Info: plots/velocity.png  used on input line 160.
 (pdftex.def)             Requested size: 204.85846pt x 153.6388pt.
 
 
@@ -831,7 +839,7 @@ Package fancyhdr Warning: \headheight is too small (18.125pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-8.98969pt}.
 
-[2 <./plots/orb2d.png (PNG copy)> <./plots/MM.png (PNG copy)> <./plots/MG.png (PNG copy)>]
+[3 <./plots/MM.png (PNG copy)>]
 
 Package fancyhdr Warning: \headheight is too small (18.125pt): 
 (fancyhdr)                Make it at least 27.11469pt, for example:
@@ -839,16 +847,16 @@ Package fancyhdr Warning: \headheight is too small (18.125pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-8.98969pt}.
 
-[3 <./plots/orb3d.png (PNG copy)> <./plots/orbxy.png (PNG copy)> <./plots/orbxz.png (PNG copy)> <./plots/orbyz.png (PNG copy)> <./plots/velocity.png (PNG copy)>]
-<plots/orbefix.png, id=50, 1124.2pt x 843.15pt>
+[4 <./plots/orb3d.png (PNG copy)> <./plots/orbxy.png (PNG copy)> <./plots/orbxz.png (PNG copy)> <./plots/orbyz.png (PNG copy)> <./plots/velocity.png (PNG copy)>]
+<plots/orbefix.png, id=55, 1124.2pt x 843.15pt>
 File: plots/orbefix.png Graphic file (type png)
 <use plots/orbefix.png>
-Package pdftex.def Info: plots/orbefix.png  used on input line 180.
+Package pdftex.def Info: plots/orbefix.png  used on input line 175.
 (pdftex.def)             Requested size: 318.66948pt x 239.00084pt.
-<plots/groundtrack.png, id=52, 1124.2pt x 843.15pt>
+<plots/groundtrack.png, id=57, 1124.2pt x 843.15pt>
 File: plots/groundtrack.png Graphic file (type png)
 <use plots/groundtrack.png>
-Package pdftex.def Info: plots/groundtrack.png  used on input line 191.
+Package pdftex.def Info: plots/groundtrack.png  used on input line 187.
 (pdftex.def)             Requested size: 318.66948pt x 239.00084pt.
 
 
@@ -858,16 +866,16 @@ Package fancyhdr Warning: \headheight is too small (18.125pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-8.98969pt}.
 
-[4 <./plots/orbefix.png (PNG copy)>]
-Underfull \hbox (badness 10000) in paragraph at lines 205--208
+[5 <./plots/orbefix.png (PNG copy)>]
+Underfull \hbox (badness 10000) in paragraph at lines 201--204
 
  []
 
-<plots/topocentric.png, id=61, 1124.2pt x 843.15pt>
+<plots/topocentric.png, id=66, 615.171pt x 461.652pt>
 File: plots/topocentric.png Graphic file (type png)
 <use plots/topocentric.png>
-Package pdftex.def Info: plots/topocentric.png  used on input line 215.
-(pdftex.def)             Requested size: 318.66948pt x 239.00084pt.
+Package pdftex.def Info: plots/topocentric.png  used on input line 211.
+(pdftex.def)             Requested size: 318.66948pt x 239.14467pt.
 
 Package fancyhdr Warning: \headheight is too small (18.125pt): 
 (fancyhdr)                Make it at least 27.11469pt, for example:
@@ -875,11 +883,11 @@ Package fancyhdr Warning: \headheight is too small (18.125pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-8.98969pt}.
 
-[5 <./plots/groundtrack.png (PNG copy)>]
-<plots/visual.png, id=69, 1124.2pt x 843.15pt>
+[6 <./plots/groundtrack.png (PNG copy)>]
+<plots/visual.png, id=75, 1124.2pt x 843.15pt>
 File: plots/visual.png Graphic file (type png)
 <use plots/visual.png>
-Package pdftex.def Info: plots/visual.png  used on input line 222.
+Package pdftex.def Info: plots/visual.png  used on input line 218.
 (pdftex.def)             Requested size: 318.66948pt x 239.00084pt.
 
 
@@ -889,23 +897,23 @@ Package fancyhdr Warning: \headheight is too small (18.125pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-8.98969pt}.
 
-[6 <./plots/topocentric.png (PNG copy)> <./plots/visual.png (PNG copy)>] (./report.aux)
+[7 <./plots/topocentric.png> <./plots/visual.png (PNG copy)>] (./report.aux)
 Package rerunfilecheck Info: File `report.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 21084 strings out of 476025
- 375346 string characters out of 5790018
+ 21075 strings out of 476025
+ 375232 string characters out of 5790018
  1874388 words of memory out of 5000000
- 41178 multiletter control sequences out of 15000+600000
- 527390 words of font info for 69 fonts, out of 8000000 for 9000
+ 41169 multiletter control sequences out of 15000+600000
+ 525847 words of font info for 67 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 108i,15n,106p,10717b,598s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfsx1440.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfsx1728.pfb>
-Output written on report.pdf (6 pages, 829077 bytes).
+ 108i,15n,106p,10717b,483s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfsx1440.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfsx1728.pfb>
+Output written on report.pdf (7 pages, 1652558 bytes).
 PDF statistics:
- 148 PDF objects out of 1000 (max. 8388607)
- 97 compressed objects within 1 object stream
- 21 named destinations out of 1000 (max. 500000)
+ 149 PDF objects out of 1000 (max. 8388607)
+ 100 compressed objects within 1 object stream
+ 23 named destinations out of 1000 (max. 500000)
  69 words of extra memory for PDF output out of 10000 (max. 10000000)
 

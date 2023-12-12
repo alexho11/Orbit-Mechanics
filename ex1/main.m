@@ -5,7 +5,7 @@
 % Clear memory and command window
 clear all; clc; close all;
 
-% Load satellite data
+% Load satellite dat
 sat_name={'GOCE','GPS','Molniya','GEO','Michibiki'};
 % Keplerian elements: a,e,i,Omega,omega,T
 % a: semi-major axis (m)
@@ -33,27 +33,29 @@ T_orb=2*pi*sqrt(sat(:,1).^3/GM); % orbital period (s)
 figure;
 for i=1:length(sat_name)
     t=0:T_orb(i);
-    [r_sat,nu_sat,~]=kep2orb(sat(i,1),sat(i,2),t,0);
+    [r_sat,nu_sat,~]=kep2orb(sat(i,1),sat(i,2),t,sat(i,6));
     plot(r_sat.*cos(nu_sat),r_sat.*sin(nu_sat),'LineWidth',2);
     hold on
 end
-
 legend(sat_name,'Location','best');
-
 axis('equal');
 xlim([-5e7,5e7]);
 ylim([-5e7,5e7]);
 xlabel('x (m)');
 ylabel('y (m)');
 title('Orbits in a 2D plane');
+
+% plot the mean, eccentric and true anomaly
 plotME(sat(2,1),sat(2,2),sat_name{2});
+plotME(sat(3,1),sat(3,2),sat_name{3});
 
 
+% 3D plot of the orbits in space-fixed system
 t=0:24*3600; % time (s)
 figure; % Create a new figure window with specified position and size
 hold on 
 for i=1:length(sat_name)
-    [ri,ri_dot]=kep2cart(sat(i,1),sat(i,2),t,0,sat(i,3),sat(i,4),sat(i,5));
+    [ri,ri_dot]=kep2cart(sat(i,1),sat(i,2),t,sat(i,6),sat(i,3),sat(i,4),sat(i,5));
     Ri{i}=ri;
     Ri_dot{i}=ri_dot;
     plot3(ri(1,:),ri(2,:),ri(3,:),'LineWidth',2);
@@ -65,6 +67,7 @@ ylabel('y (m)');
 zlabel('z (m)');
 Earth_coast(3);
 view([90 30])
+
 % project in the x-y plane
 figure;
 hold on;
@@ -72,7 +75,7 @@ for i=1:length(sat_name)
     plot(Ri{i}(1,:),Ri{i}(2,:),'LineWidth',2);
 end
 legend(sat_name,'Location','best','AutoUpdate','off');
-title('Orbit of 5 Satellites in x-y plane','FontSize',15);
+title('Orbit of 5 Satellites in x-y plane','FontSize',25);
 xlabel('x (m)');
 ylabel('y (m)');
 % project in the x-z plane
@@ -82,7 +85,7 @@ for i=1:length(sat_name)
     plot(Ri{i}(1,:),Ri{i}(3,:),'LineWidth',2);
 end
 legend(sat_name,'Location','best','AutoUpdate','off');
-title('Orbit of 5 Satellites in x-z plane','FontSize',15);
+title('Orbit of 5 Satellites in x-z plane','FontSize',25);
 xlabel('x (m)');
 ylabel('z (m)');
 % project in the y-z plane
@@ -92,7 +95,7 @@ for i=1:length(sat_name)
     plot(Ri{i}(2,:),Ri{i}(3,:),'LineWidth',2);
 end
 legend(sat_name,'Location','best','AutoUpdate','off');
-title('Orbit of 5 Satellites in y-z plane','FontSize',15);
+title('Orbit of 5 Satellites in y-z plane','FontSize',25);
 xlabel('y (m)');
 ylabel('z (m)');
 % plot the magnitude of velocity with time
@@ -103,17 +106,18 @@ for i=1:length(sat_name)
     plot(t/3600,v,'LineWidth',4);
 end
 legend(sat_name,'Location','best','AutoUpdate','off');
-title('Velocity of 5 Satellites with Time','FontSize',15);
+title('Velocity of 5 Satellites with Time','FontSize',25);
 xlabel('Time (hours)');
 ylabel('Velocity (m/s)');
 
 
-
+% 3D plot of the orbits in Earth-fixed system
 figure;
 hold on
+
 for i=1:length(sat_name)
     t=linspace(0,2*T_orb(i));
-    [ri,ri_dot]=kep2cart(sat(i,1),sat(i,2),t,0,sat(i,3),sat(i,4),sat(i,5));
+    [ri,ri_dot]=kep2cart(sat(i,1),sat(i,2),t,sat(i,6),sat(i,3),sat(i,4),sat(i,5));
     [re,re_dot]=cart2efix(ri,ri_dot,t);
     if i==4
         plot3(re(1,:),re(2,:),re(3,:),'*','LineWidth',20);
@@ -129,44 +133,45 @@ legend(sat_name,'Location','best','AutoUpdate','off');
 Earth_coast(3);
 view([90 30])
 
-% figure;
-% hold on
-% colors = jet(length(sat_name)); % Create a color map
-% colors(4,2)=0;
-% h = zeros(1, length(sat_name)); % Initialize handle array
-% for i=1:length(sat_name)
-%     h(i) = plot(NaN, NaN, 'Color', colors(i,:), 'LineWidth', 2); % Create a dummy line for the legend
-%     t=0:2*T_orb(i);
-%     lambda_cell = {};
-%     phi_cell = {};
-%     lambda_prev = inf;
-%     for j=1:length(t)
-%         [ri,ri_dot]=kep2cart(sat(i,1),sat(i,2),t(j),0,sat(i,3),sat(i,4),sat(i,5));
-%         [re,re_dot]=cart2efix(ri,ri_dot,t(j));
-%         lambda=atan2(re(2,:),re(1,:))*180/pi;
-%         phi=atan2(re(3,:),sqrt(re(1,:).^2+re(2,:).^2))*180/pi;
-%         if abs(lambda - lambda_prev) > 180
-%             lambda_cell{end+1} = lambda;
-%             phi_cell{end+1} = phi;
-%         else
-%             lambda_cell{end} = [lambda_cell{end}, lambda];
-%             phi_cell{end} = [phi_cell{end}, phi];
-%         end
-%         lambda_prev = lambda;
-%     end
-%     if i==4
-%         scatter(lambda(1),phi(1),'MarkerEdgeColor',colors(i,:),'MarkerFaceColor',colors(i,:),'LineWidth',4)
-%     else
-%         for k=1:length(lambda_cell)
-%             plot(lambda_cell{k}, phi_cell{k}, 'Color', colors(i,:), 'LineWidth', 4); % Specify the color
-%         end
-%     end
-% end
-% legend(h, sat_name,'Location','best','AutoUpdate','off'); % Use the dummy lines for the legend
-% Earth_coast(2);
-% title('Ground tracks of 5 Satellites','FontSize',15);
-% xlabel('Longitude (deg)');
-% ylabel('Latitude (deg)');
+% ground tracks of the satellites
+figure;
+hold on
+colors = jet(length(sat_name)); % Create a color map
+colors(4,2)=0;
+h = zeros(1, length(sat_name)); % Initialize handle array
+for i=1:length(sat_name)
+    h(i) = plot(NaN, NaN, 'Color', colors(i,:), 'LineWidth', 2); % Create a dummy line for the legend
+    t=0:2*T_orb(i);
+    lambda_cell = {};
+    phi_cell = {};
+    lambda_prev = inf;
+    for j=1:length(t)
+        [ri,ri_dot]=kep2cart(sat(i,1),sat(i,2),t(j),sat(i,6),sat(i,3),sat(i,4),sat(i,5));
+        [re,re_dot]=cart2efix(ri,ri_dot,t(j));
+        lambda=atan2(re(2,:),re(1,:))*180/pi;
+        phi=atan2(re(3,:),sqrt(re(1,:).^2+re(2,:).^2))*180/pi;
+        if abs(lambda - lambda_prev) > 180
+            lambda_cell{end+1} = lambda;
+            phi_cell{end+1} = phi;
+        else
+            lambda_cell{end} = [lambda_cell{end}, lambda];
+            phi_cell{end} = [phi_cell{end}, phi];
+        end
+        lambda_prev = lambda;
+    end
+    if i==4
+        scatter(lambda(1),phi(1),'MarkerEdgeColor',colors(i,:),'MarkerFaceColor',colors(i,:),'LineWidth',4)
+    else
+        for k=1:length(lambda_cell)
+            plot(lambda_cell{k}, phi_cell{k}, 'Color', colors(i,:), 'LineWidth', 4); % Specify the color
+        end
+    end
+end
+legend(h, sat_name,'Location','best','AutoUpdate','off'); % Use the dummy lines for the legend
+Earth_coast(2);
+title('Ground tracks of 5 Satellites','FontSize',15);
+xlabel('Longitude (deg)');
+ylabel('Latitude (deg)');
 
 figure;
 set(gca,'visible','off')
@@ -174,7 +179,7 @@ hold on
 c={'+b','+g','+c','*r','+m'};
 for i=1:length(sat_name)
     t=0:2*T_orb(i);
-    [ri,ri_dot]=kep2cart(sat(i,1),sat(i,2),t,0,sat(i,3),sat(i,4),sat(i,5));
+    [ri,ri_dot]=kep2cart(sat(i,1),sat(i,2),t,sat(i,6),sat(i,3),sat(i,4),sat(i,5));
     [re,re_dot]=cart2efix(ri,ri_dot,t);
     [rt,rt_dot,az,elev]=efix2topo(re,re_dot);
     az=az*180/pi;
@@ -185,13 +190,13 @@ for i=1:length(sat_name)
 end
 title('Skyplot of 5 Satellites','FontSize',15);
 
-
+% plot the visibility of the satellites
 figure;
 t=1:24*3600;
 t_hours = t / 3600; % Convert t to hours
 c={'b','g','c','r','m'};
 for i=1:length(sat_name)
-    [ri,ri_dot]=kep2cart(sat(i,1),sat(i,2),t,0,sat(i,3),sat(i,4),sat(i,5));
+    [ri,ri_dot]=kep2cart(sat(i,1),sat(i,2),t,sat(i,6),sat(i,3),sat(i,4),sat(i,5));
     [re,re_dot]=cart2efix(ri,ri_dot,t);
     [rt,rt_dot,az,elev]=efix2topo(re,re_dot);
     az=az*180/pi;
@@ -227,7 +232,9 @@ function plotME(a,e,sat)
     hold on
     plot(t/3600,E/pi*180,"LineWidth",2);
     plot(t/3600,nu/pi*180,"LineWidth",2);
-    plot(t/3600,nu/pi*180-M/pi*180,"LineWidth",2);
+    delta=(nu-M)*180/pi;
+    delta(delta<-350)=delta(delta<-350)+360;
+    plot(t/3600,delta,"LineWidth",2);
     legend('Mean anomaly','Eccentric anomaly','True anomaly','True anomaly - Mean anomaly','Location','best');
-    title(append('M,E,nu of the ', sat, ' satellite'));
+    title(append('M,E,nu of the ', sat, ' satellite'),'FontSize',15);
 end

@@ -30,7 +30,7 @@ function [re,re_dot]=cart2efix(r,r_dot,t)
     Omega_dot=2*pi/86164;
     
     % rotation angle
-    theta=Omega_dot.*t+(2+52/60)/12*pi;
+    theta=Omega_dot.*t+3/12*pi;
     
     re=zeros(size(r,1),size(r,2));
     re_dot=zeros(size(r_dot,1),size(r_dot,2));

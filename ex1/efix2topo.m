@@ -36,12 +36,15 @@ function [rt,rt_dot,az,elev]=efix2topo(r,r_dot)
     f=1/f_1;
     b=a-a*f;
     e=sqrt(a^2-b^2)/a;
-
+    % transformation from cartesian to ellipsoidal coordinates
     [lambda,phi,~]=cart2ell(rw(1),rw(2),rw(3),a,e);
+    lambda=lambda*pi/180;
+    phi=phi*pi/180;
+
     % rotation
     Q1=[-1,0,0;0,1,0;0,0,1]; % from right to left-handed system
-    rt=Q1*MatRot(pi-phi,2)*MatRot(lambda,3)*r_trans;
-    rt_dot=Q1*MatRot(pi-phi,2)*MatRot(lambda,3)*r_dot;
+    rt=Q1*MatRot(pi/2-phi,2)*MatRot(lambda,3)*r_trans;
+    rt_dot=Q1*MatRot(pi/2-phi,2)*MatRot(lambda,3)*r_dot;
     az=atan2(rt(2,:),rt(1,:));
     elev=atan2(rt(3,:),sqrt(rt(1,:).^2+rt(2,:).^2));
 end

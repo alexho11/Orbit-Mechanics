@@ -112,4 +112,3 @@ end
 
 % reset hold state
 if ~hold_state, set(cax,'NextPlot',next); end
-
