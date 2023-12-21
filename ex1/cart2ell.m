@@ -31,22 +31,19 @@ lambda=atan(Y/X)/pi*180;
 p=sqrt(X^2+Y^2);
 
 %starting values
-h_0=0;
-phi_0=atan(Z/(p*(1-e^2)));
+phi_0 = atan2(Z,(p*(1-e^2))); % initial geocentric latitude
 
-N_p=a/sqrt(1-e^2*sin(phi_0)^2);
-h_i=p/cos(phi_0)-N_p;
-phi_i=atan(Z*(N_p+h_i)/(p*(N_p*(1-e^2)+h_i)));
+while true
+    N_phi = a/sqrt(1-e^2*sin(phi_0)^2);
+    h_i = p/cos(phi_0)-N_phi;
+    phi_i = atan2(Z*(N_phi+h_i),p*(N_phi*(1-e^2)+h_i));
 
-while abs(h_0-h_i)>eps && abs(phi_0-phi_i)
-    
-    h_0=h_i;
-    phi_0=phi_i;
-    N_p=a/sqrt(1-e^2*sin(phi_0)^2);
-    h_i=p/cos(phi_0)-N_p;
-    phi_i=atan(Z*(N_p+h_i)/(p*(N_p*(1-e^2)+h_i)));
-
+    if abs(phi_0-phi_i)<eps
+        break;
+    end
+    phi_0 = phi_i;
 end
 
+
 h=h_i;
-phi=phi_i/pi*180;
+phi=phi_i/pi*180

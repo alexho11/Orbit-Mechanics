@@ -31,16 +31,19 @@ function [rt,rt_dot,az,elev]=efix2topo(r,r_dot)
     r_trans=r-rw;
     
     % latitude and longitude of the station Wettzell
-    a=6378137;
-    f_1=298.257223563;
-    f=1/f_1;
-    b=a-a*f;
-    e=sqrt(a^2-b^2)/a;
-    % transformation from cartesian to ellipsoidal coordinates
-    [lambda,phi,~]=cart2ell(rw(1),rw(2),rw(3),a,e);
-    lambda=lambda*pi/180;
-    phi=phi*pi/180;
+    % a=6378137;
+    % f_1=298.257223563;
+    % f=1/f_1;
+    % b=a-a*f;
+    % e=sqrt(a^2-b^2)/a;
 
+
+    % transformation from cartesian to ellipsoidal coordinates
+    % [lambda,phi,~]=cart2ell(rw(1),rw(2),rw(3),a,e);
+    % lambda=lambda*pi/180;
+    % phi=phi*pi/180;
+    lambda=12.8781/180*pi;
+    phi=49.1449/180*pi;
     % rotation
     Q1=[-1,0,0;0,1,0;0,0,1]; % from right to left-handed system
     rt=Q1*MatRot(pi/2-phi,2)*MatRot(lambda,3)*r_trans;

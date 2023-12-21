@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1701805415 "/Users/alex/Documents/TUM/OrbMech/ex1/report.tex" "report.pdf" "report" 1701805417 0
-  "/Users/alex/Documents/TUM/OrbMech/ex1/report.tex" 1701764090 11942 d26f40fa05550a5fa91bdd7d32fb7d44 ""
+["pdflatex"] 1702407518 "/Users/alex/Documents/TUM/OrbMech/ex1/report.tex" "report.pdf" "report" 1702407519 0
+  "/Users/alex/Documents/TUM/OrbMech/ex1/report.tex" 1702407518 11942 d26f40fa05550a5fa91bdd7d32fb7d44 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1136849721 2971 def0b6c1f0b107b3b936def894055589 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/jknappen/ec/ecbx1200.tfm" 1136768653 3584 402da0b29eafbad07963b1224b222f18 ""
@@ -171,12 +171,12 @@
   "plots/orbxy.png" 1701763180 52467 3bc9ad37d46015e505bde4d9b94e1745 ""
   "plots/orbxz.png" 1701763171 49039 faf97ac9df9dc1e89593744123638fdf ""
   "plots/orbyz.png" 1701763157 50061 ce394b142a5e0244ee56b7275baba484 ""
-  "plots/topocentric.png" 1701805415 922364 169b6b5f838e48b5bd73365fc67ec364 ""
+  "plots/topocentric.png" 1702407420 1201656 7d426314567ea5eaa8f9a364dbe576de ""
   "plots/velocity.png" 1701805234 51882 f93aedb96023909107f23667ae315d44 ""
-  "plots/visual.png" 1701805125 47698 c81ef792d61e21d7baa0ea6bca54b1fa ""
-  "report.aux" 1701805417 3771 d65c99d67c226d03858b90454ab320f1 "pdflatex"
-  "report.out" 1701805416 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "report.tex" 1701764090 11942 d26f40fa05550a5fa91bdd7d32fb7d44 ""
+  "plots/visual.png" 1702407203 47719 4a363c1cf1be446f0ccb300f0f00484a ""
+  "report.aux" 1702407519 3771 d65c99d67c226d03858b90454ab320f1 "pdflatex"
+  "report.out" 1702407519 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "report.tex" 1702407518 11942 d26f40fa05550a5fa91bdd7d32fb7d44 ""
   (generated)
   "report.aux"
   "report.log"

@@ -178,10 +178,12 @@ set(gca,'visible','off')
 hold on
 c={'+b','+g','+c','*r','+m'};
 for i=1:length(sat_name)
-    t=0:2*T_orb(i);
+    t=1:24*3600;
     [ri,ri_dot]=kep2cart(sat(i,1),sat(i,2),t,sat(i,6),sat(i,3),sat(i,4),sat(i,5));
     [re,re_dot]=cart2efix(ri,ri_dot,t);
     [rt,rt_dot,az,elev]=efix2topo(re,re_dot);
+    AZ{i}=az;
+    ELEV{i}=elev;
     az=az*180/pi;
     elev=elev*180/pi;
     elev(elev < 0) = NaN; % Set negative values in elev to NaN
@@ -196,11 +198,8 @@ t=1:24*3600;
 t_hours = t / 3600; % Convert t to hours
 c={'b','g','c','r','m'};
 for i=1:length(sat_name)
-    [ri,ri_dot]=kep2cart(sat(i,1),sat(i,2),t,sat(i,6),sat(i,3),sat(i,4),sat(i,5));
-    [re,re_dot]=cart2efix(ri,ri_dot,t);
-    [rt,rt_dot,az,elev]=efix2topo(re,re_dot);
-    az=az*180/pi;
-    elev=elev*180/pi;
+    az=AZ{i}*180/pi;
+    elev=ELEV{i}*180/pi;
     subplot(5,1,i);
     area(t_hours,elev>0,'FaceColor',c{i},'EdgeColor',c{i}); % Fill the area under the plot
     xticks(0:2:24); % Set x-axis ticks

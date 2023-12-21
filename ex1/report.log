@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.5.6)  5 DEC 2023 20:43
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.5.6)  12 DEC 2023 19:58
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -504,9 +504,9 @@ Package: verbatim 2022-07-02 v1.5u LaTeX2e package for verbatim enhancements
 Package: catchfile 2019/12/09 v1.8 Catch the contents of a file (HO)
 )
 \verbatim@out=\write4
-runsystem(echo t > "w18-test-20231251243.tex")...disabled (restricted).
+runsystem(echo t > "w18-test-202312121198.tex")...disabled (restricted).
 
-runsystem(del "w18-test-20231251243.tex")...disabled (restricted).
+runsystem(del "w18-test-202312121198.tex")...disabled (restricted).
 
 
 
@@ -871,11 +871,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 201--204
 
  []
 
-<plots/topocentric.png, id=66, 615.171pt x 461.652pt>
+<plots/topocentric.png, id=66, 605.097pt x 443.475pt>
 File: plots/topocentric.png Graphic file (type png)
 <use plots/topocentric.png>
 Package pdftex.def Info: plots/topocentric.png  used on input line 211.
-(pdftex.def)             Requested size: 318.66948pt x 239.14467pt.
+(pdftex.def)             Requested size: 318.66948pt x 233.55191pt.
 
 Package fancyhdr Warning: \headheight is too small (18.125pt): 
 (fancyhdr)                Make it at least 27.11469pt, for example:
@@ -903,14 +903,14 @@ Package rerunfilecheck Info: File `report.out' has not changed.
  ) 
 Here is how much of TeX's memory you used:
  21075 strings out of 476025
- 375232 string characters out of 5790018
+ 375235 string characters out of 5790018
  1874388 words of memory out of 5000000
  41169 multiletter control sequences out of 15000+600000
  525847 words of font info for 67 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  108i,15n,106p,10717b,483s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfsx1440.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfsx1728.pfb>
-Output written on report.pdf (7 pages, 1652558 bytes).
+Output written on report.pdf (7 pages, 1880660 bytes).
 PDF statistics:
  149 PDF objects out of 1000 (max. 8388607)
  100 compressed objects within 1 object stream
