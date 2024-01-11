@@ -18,13 +18,13 @@ function [re,re_dot]=cart2efix(r,r_dot,t)
     % OUT:
     % re(m) 3-dimensional cartesian coordinates in Earth-fixed frame
     % re_dot(m/s) 3-dimensional cartesian velocities in Earth-fixed frame
-    % =========================================================================
+    % ===========================================================
     % author:           Hsin-Feng Ho
     % Martikelnummer:   03770686
     % created at:       26.11.2023
     % last modification:26.11.2023
     % project:          Exercise 1: Keplerian Orbits
-    % =========================================================================
+    % ===========================================================
     
     % Earth rotation rate
     Omega_dot=2*pi/86164;

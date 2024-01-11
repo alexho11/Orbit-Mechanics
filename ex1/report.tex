@@ -34,7 +34,7 @@ labelformat=brace, position=top]{subcaption}
 \definecolor{mauve}{rgb}{0.58,0,0.82}
 
 \lstset{ %
-	language=Python,                % the language of the code
+	language=Matlab,                % the language of the code
 	basicstyle=\small\ttfamily,     % the size of the fonts that are used for the code
 	numbers=left,                   % where to put the line-numbers
 	numberstyle=\tiny\color{gray},  % the style that is used for the line-numbers
@@ -66,6 +66,15 @@ labelformat=brace, position=top]{subcaption}
 \rhead{Hsin-Feng Ho \\03770686}
 \rfoot{Page \thepage}	
 \begin{document}
+\begin{titlepage}
+    \vspace{\fill}
+    \title{\textbf{Orbit Mechanics \\ Exercise 1: Keplerian Orbits in Space-fixed, Earth-fixed and Topocentric systems}}
+    \vspace{5cm}
+    \author{Hsin-Feng Ho\\
+    03770686}
+    \vspace{3cm}
+    \maketitle
+\end{titlepage}
 \section{Introduction}
 In this exercise, we will study the Keplerian orbits in different coordinate systems. The Keplerian obital elements for 5 satellites are given in the table below. The orbital elements are given in the following order: semi-major axis $a$, eccentricity $e$, inclination $i$, right ascension of the ascending node $\Omega$, argument of perigee $\omega$, and perigee passing time $T_0$ on Nov.06,2023.
 \begin{table}[H]
@@ -219,4 +228,10 @@ Finally we can calculate the visibility of the satellites at the station Wettzel
     \caption{Visibility}
     \label{fig:visibility}
 \end{figure}
+\newpage
+\section*{Source code}
+\lstinputlisting[breaklines=true]{kep2orb.m}
+\lstinputlisting[breaklines=true]{kep2cart.m}
+\lstinputlisting[breaklines=true]{cart2efix.m}
+\lstinputlisting[breaklines=true]{efix2topo.m}
 \end{document}

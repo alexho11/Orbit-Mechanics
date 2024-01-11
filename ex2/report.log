@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.5.6)  6 JAN 2024 13:47
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.5.6)  11 JAN 2024 11:38
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/Users/alex/Documents/TUM/OrbMech/ex1/report.tex
-(/Users/alex/Documents/TUM/OrbMech/ex1/report.tex
+**/Users/alex/Documents/TUM/OrbMech/ex2/report.tex
+(/Users/alex/Documents/TUM/OrbMech/ex2/report.tex
 LaTeX2e <2022-11-01> patch level 1
 L3 programming layer <2023-02-22> (/usr/local/texlive/2023/texmf-dist/tex/latex/koma-script/scrartcl.cls
 Document Class: scrartcl 2022/10/12 v3.38 KOMA-Script document class (article)
@@ -504,9 +504,9 @@ Package: verbatim 2022-07-02 v1.5u LaTeX2e package for verbatim enhancements
 Package: catchfile 2019/12/09 v1.8 Catch the contents of a file (HO)
 )
 \verbatim@out=\write4
-runsystem(echo t > "w18-test-202416827.tex")...disabled (restricted).
+runsystem(echo t > "w18-test-2024111698.tex")...disabled (restricted).
 
-runsystem(del "w18-test-202416827.tex")...disabled (restricted).
+runsystem(del "w18-test-2024111698.tex")...disabled (restricted).
 
 
 
@@ -774,109 +774,15 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 
 {/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}]
-<plots/orb2d.png, id=13, 1124.2pt x 843.15pt>
-File: plots/orb2d.png Graphic file (type png)
-<use plots/orb2d.png>
-Package pdftex.def Info: plots/orb2d.png  used on input line 125.
-(pdftex.def)             Requested size: 364.19667pt x 273.14565pt.
-
-
-Package fancyhdr Warning: \headheight is too small (18.125pt): 
-(fancyhdr)                Make it at least 27.11469pt, for example:
-(fancyhdr)                \setlength{\headheight}{27.11469pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-8.98969pt}.
-
-[2]
-<plots/MG.png, id=34, 1124.2pt x 843.15pt>
-File: plots/MG.png Graphic file (type png)
-<use plots/MG.png>
-Package pdftex.def Info: plots/MG.png  used on input line 132.
-(pdftex.def)             Requested size: 364.19667pt x 273.14565pt.
-<plots/MM.png, id=35, 1124.2pt x 843.15pt>
-File: plots/MM.png Graphic file (type png)
-<use plots/MM.png>
-Package pdftex.def Info: plots/MM.png  used on input line 137.
-(pdftex.def)             Requested size: 364.19667pt x 273.14565pt.
-
-
-Package fancyhdr Warning: \headheight is too small (18.125pt): 
-(fancyhdr)                Make it at least 27.11469pt, for example:
-(fancyhdr)                \setlength{\headheight}{27.11469pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-8.98969pt}.
-
-[3 <./plots/orb2d.png (PNG copy)> <./plots/MG.png (PNG copy)>]
-<plots/orb3d.png, id=43, 1124.2pt x 843.15pt>
-File: plots/orb3d.png Graphic file (type png)
-<use plots/orb3d.png>
-Package pdftex.def Info: plots/orb3d.png  used on input line 150.
-(pdftex.def)             Requested size: 295.90588pt x 221.92842pt.
-<plots/orbxy.png, id=44, 1124.2pt x 843.15pt>
-File: plots/orbxy.png Graphic file (type png)
-<use plots/orbxy.png>
-Package pdftex.def Info: plots/orbxy.png  used on input line 157.
-(pdftex.def)             Requested size: 204.85846pt x 153.6388pt.
-<plots/orbxz.png, id=45, 1124.2pt x 843.15pt>
-File: plots/orbxz.png Graphic file (type png)
-<use plots/orbxz.png>
-Package pdftex.def Info: plots/orbxz.png  used on input line 161.
-(pdftex.def)             Requested size: 204.85846pt x 153.6388pt.
-<plots/orbyz.png, id=46, 1124.2pt x 843.15pt>
-File: plots/orbyz.png Graphic file (type png)
-<use plots/orbyz.png>
-Package pdftex.def Info: plots/orbyz.png  used on input line 165.
-(pdftex.def)             Requested size: 204.85846pt x 153.6388pt.
-<plots/velocity.png, id=47, 1124.2pt x 843.15pt>
-File: plots/velocity.png Graphic file (type png)
-<use plots/velocity.png>
-Package pdftex.def Info: plots/velocity.png  used on input line 169.
-(pdftex.def)             Requested size: 204.85846pt x 153.6388pt.
-
-
-Package fancyhdr Warning: \headheight is too small (18.125pt): 
-(fancyhdr)                Make it at least 27.11469pt, for example:
-(fancyhdr)                \setlength{\headheight}{27.11469pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-8.98969pt}.
-
-[4 <./plots/MM.png (PNG copy)>]
-
-Package fancyhdr Warning: \headheight is too small (18.125pt): 
-(fancyhdr)                Make it at least 27.11469pt, for example:
-(fancyhdr)                \setlength{\headheight}{27.11469pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-8.98969pt}.
-
-[5 <./plots/orb3d.png (PNG copy)> <./plots/orbxy.png (PNG copy)> <./plots/orbxz.png (PNG copy)> <./plots/orbyz.png (PNG copy)> <./plots/velocity.png (PNG copy)>]
-<plots/orbefix.png, id=61, 1124.2pt x 843.15pt>
-File: plots/orbefix.png Graphic file (type png)
-<use plots/orbefix.png>
-Package pdftex.def Info: plots/orbefix.png  used on input line 184.
-(pdftex.def)             Requested size: 318.66948pt x 239.00084pt.
-<plots/groundtrack.png, id=63, 1124.2pt x 843.15pt>
-File: plots/groundtrack.png Graphic file (type png)
-<use plots/groundtrack.png>
-Package pdftex.def Info: plots/groundtrack.png  used on input line 196.
-(pdftex.def)             Requested size: 318.66948pt x 239.00084pt.
-
-
-Package fancyhdr Warning: \headheight is too small (18.125pt): 
-(fancyhdr)                Make it at least 27.11469pt, for example:
-(fancyhdr)                \setlength{\headheight}{27.11469pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-8.98969pt}.
-
-[6 <./plots/orbefix.png (PNG copy)>]
-Underfull \hbox (badness 10000) in paragraph at lines 210--213
+Underfull \hbox (badness 10000) in paragraph at lines 79--92
 
  []
 
-<plots/topocentric.png, id=72, 605.097pt x 443.475pt>
-File: plots/topocentric.png Graphic file (type png)
-<use plots/topocentric.png>
-Package pdftex.def Info: plots/topocentric.png  used on input line 220.
-(pdftex.def)             Requested size: 318.66948pt x 233.55191pt.
+<./plots/3D_orbit.png, id=12, 562.2606pt x 421.575pt>
+File: ./plots/3D_orbit.png Graphic file (type png)
+<use ./plots/3D_orbit.png>
+Package pdftex.def Info: ./plots/3D_orbit.png  used on input line 97.
+(pdftex.def)             Requested size: 364.19667pt x 273.06845pt.
 
 Package fancyhdr Warning: \headheight is too small (18.125pt): 
 (fancyhdr)                Make it at least 27.11469pt, for example:
@@ -884,12 +790,31 @@ Package fancyhdr Warning: \headheight is too small (18.125pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-8.98969pt}.
 
-[7 <./plots/groundtrack.png (PNG copy)>]
-<plots/visual.png, id=82, 1124.2pt x 843.15pt>
-File: plots/visual.png Graphic file (type png)
-<use plots/visual.png>
-Package pdftex.def Info: plots/visual.png  used on input line 227.
-(pdftex.def)             Requested size: 318.66948pt x 239.00084pt.
+[2 <./plots/3D_orbit.png (PNG copy)>]
+<./plots/ode23_5_yprime.png, id=31, 562.2606pt x 421.575pt>
+File: ./plots/ode23_5_yprime.png Graphic file (type png)
+<use ./plots/ode23_5_yprime.png>
+Package pdftex.def Info: ./plots/ode23_5_yprime.png  used on input line 123.
+(pdftex.def)             Requested size: 204.85846pt x 153.6002pt.
+<./plots/ode23_50_yprime.png, id=32, 562.2606pt x 421.575pt>
+File: ./plots/ode23_50_yprime.png Graphic file (type png)
+<use ./plots/ode23_50_yprime.png>
+Package pdftex.def Info: ./plots/ode23_50_yprime.png  used on input line 126.
+(pdftex.def)             Requested size: 204.85846pt x 153.6002pt.
+<./plots/ode45_5_yprime.png, id=33, 562.2606pt x 421.575pt>
+File: ./plots/ode45_5_yprime.png Graphic file (type png)
+<use ./plots/ode45_5_yprime.png>
+Package pdftex.def Info: ./plots/ode45_5_yprime.png  used on input line 129.
+(pdftex.def)             Requested size: 204.85846pt x 153.6002pt.
+<./plots/ode45_50_yprime.png, id=34, 562.2606pt x 421.575pt>
+File: ./plots/ode45_50_yprime.png Graphic file (type png)
+<use ./plots/ode45_50_yprime.png>
+Package pdftex.def Info: ./plots/ode45_50_yprime.png  used on input line 132.
+(pdftex.def)             Requested size: 204.85846pt x 153.6002pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 116--134
+
+ []
 
 
 Package fancyhdr Warning: \headheight is too small (18.125pt): 
@@ -898,11 +823,52 @@ Package fancyhdr Warning: \headheight is too small (18.125pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-8.98969pt}.
 
-[8 <./plots/topocentric.png> <./plots/visual.png (PNG copy)>]
-LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 233.
- (/usr/local/texlive/2023/texmf-dist/tex/latex/base/t1cmtt.fd
-File: t1cmtt.fd 2022/07/10 v2.5l Standard LaTeX font definitions
-) (./kep2orb.m) (./kep2cart.m
+[3 <./plots/ode23_5_yprime.png (PNG copy)> <./plots/ode23_50_yprime.png (PNG copy)> <./plots/ode45_5_yprime.png (PNG copy)> <./plots/ode45_50_yprime.png (PNG copy)>]
+<./plots/ode23_5_yprime_RSW.png, id=44, 562.2606pt x 421.575pt>
+File: ./plots/ode23_5_yprime_RSW.png Graphic file (type png)
+<use ./plots/ode23_5_yprime_RSW.png>
+Package pdftex.def Info: ./plots/ode23_5_yprime_RSW.png  used on input line 146.
+(pdftex.def)             Requested size: 204.85846pt x 153.6002pt.
+<./plots/ode23_50_yprime_RSW.png, id=45, 562.2606pt x 421.575pt>
+File: ./plots/ode23_50_yprime_RSW.png Graphic file (type png)
+<use ./plots/ode23_50_yprime_RSW.png>
+Package pdftex.def Info: ./plots/ode23_50_yprime_RSW.png  used on input line 149.
+(pdftex.def)             Requested size: 204.85846pt x 153.6002pt.
+<./plots/ode45_5_yprime_RSW.png, id=46, 562.2606pt x 421.575pt>
+File: ./plots/ode45_5_yprime_RSW.png Graphic file (type png)
+<use ./plots/ode45_5_yprime_RSW.png>
+Package pdftex.def Info: ./plots/ode45_5_yprime_RSW.png  used on input line 152.
+(pdftex.def)             Requested size: 204.85846pt x 153.6002pt.
+<./plots/ode45_50_yprime_RSW.png, id=47, 562.2606pt x 421.575pt>
+File: ./plots/ode45_50_yprime_RSW.png Graphic file (type png)
+<use ./plots/ode45_50_yprime_RSW.png>
+Package pdftex.def Info: ./plots/ode45_50_yprime_RSW.png  used on input line 155.
+(pdftex.def)             Requested size: 204.85846pt x 153.6002pt.
+<./plots/ode23_5_yprime_d.png, id=48, 562.2606pt x 421.575pt>
+File: ./plots/ode23_5_yprime_d.png Graphic file (type png)
+<use ./plots/ode23_5_yprime_d.png>
+Package pdftex.def Info: ./plots/ode23_5_yprime_d.png  used on input line 173.
+(pdftex.def)             Requested size: 204.85846pt x 153.6002pt.
+<./plots/ode23_50_yprime_d.png, id=49, 562.2606pt x 421.575pt>
+File: ./plots/ode23_50_yprime_d.png Graphic file (type png)
+<use ./plots/ode23_50_yprime_d.png>
+Package pdftex.def Info: ./plots/ode23_50_yprime_d.png  used on input line 176.
+(pdftex.def)             Requested size: 204.85846pt x 153.6002pt.
+<./plots/ode45_5_yprime_d.png, id=50, 562.2606pt x 421.575pt>
+File: ./plots/ode45_5_yprime_d.png Graphic file (type png)
+<use ./plots/ode45_5_yprime_d.png>
+Package pdftex.def Info: ./plots/ode45_5_yprime_d.png  used on input line 179.
+(pdftex.def)             Requested size: 204.85846pt x 153.6002pt.
+<./plots/ode45_50_yprime_d.png, id=51, 562.2606pt x 421.575pt>
+File: ./plots/ode45_50_yprime_d.png Graphic file (type png)
+<use ./plots/ode45_50_yprime_d.png>
+Package pdftex.def Info: ./plots/ode45_50_yprime_d.png  used on input line 182.
+(pdftex.def)             Requested size: 204.85846pt x 153.6002pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 166--184
+
+ []
+
 
 Package fancyhdr Warning: \headheight is too small (18.125pt): 
 (fancyhdr)                Make it at least 27.11469pt, for example:
@@ -910,7 +876,28 @@ Package fancyhdr Warning: \headheight is too small (18.125pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-8.98969pt}.
 
-[9]) (./cart2efix.m
+[4 <./plots/ode23_5_yprime_RSW.png (PNG copy)> <./plots/ode23_50_yprime_RSW.png (PNG copy)> <./plots/ode45_5_yprime_RSW.png (PNG copy)> <./plots/ode45_50_yprime_RSW.png (PNG copy)>]
+<./plots/ode23_5_yprime_d_RSW.png, id=58, 562.2606pt x 421.575pt>
+File: ./plots/ode23_5_yprime_d_RSW.png Graphic file (type png)
+<use ./plots/ode23_5_yprime_d_RSW.png>
+Package pdftex.def Info: ./plots/ode23_5_yprime_d_RSW.png  used on input line 189.
+(pdftex.def)             Requested size: 204.85846pt x 153.6002pt.
+<./plots/ode23_50_yprime_d_RSW.png, id=59, 562.2606pt x 421.575pt>
+File: ./plots/ode23_50_yprime_d_RSW.png Graphic file (type png)
+<use ./plots/ode23_50_yprime_d_RSW.png>
+Package pdftex.def Info: ./plots/ode23_50_yprime_d_RSW.png  used on input line 192.
+(pdftex.def)             Requested size: 204.85846pt x 153.6002pt.
+<./plots/ode45_5_yprime_d_RSW.png, id=60, 562.2606pt x 421.575pt>
+File: ./plots/ode45_5_yprime_d_RSW.png Graphic file (type png)
+<use ./plots/ode45_5_yprime_d_RSW.png>
+Package pdftex.def Info: ./plots/ode45_5_yprime_d_RSW.png  used on input line 195.
+(pdftex.def)             Requested size: 204.85846pt x 153.6002pt.
+<./plots/ode45_50_yprime_d_RSW.png, id=61, 562.2606pt x 421.575pt>
+File: ./plots/ode45_50_yprime_d_RSW.png Graphic file (type png)
+<use ./plots/ode45_50_yprime_d_RSW.png>
+Package pdftex.def Info: ./plots/ode45_50_yprime_d_RSW.png  used on input line 198.
+(pdftex.def)             Requested size: 204.85846pt x 153.6002pt.
+
 
 Package fancyhdr Warning: \headheight is too small (18.125pt): 
 (fancyhdr)                Make it at least 27.11469pt, for example:
@@ -918,7 +905,28 @@ Package fancyhdr Warning: \headheight is too small (18.125pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-8.98969pt}.
 
-[10]) (./efix2topo.m
+[5 <./plots/ode23_5_yprime_d.png (PNG copy)> <./plots/ode23_50_yprime_d.png (PNG copy)> <./plots/ode45_5_yprime_d.png (PNG copy)> <./plots/ode45_50_yprime_d.png (PNG copy)> <./plots/ode23_5_yprime_d_RSW.png (PNG copy)> <./plots/ode23_50_yprime_d_RSW.png (PNG copy)> <./plots/ode45_5_yprime_d_RSW.png (PNG copy)> <./plots/ode45_50_yprime_d_RSW.png (PNG copy)>]
+<./plots/euler_5_yprime.png, id=69, 562.2606pt x 421.575pt>
+File: ./plots/euler_5_yprime.png Graphic file (type png)
+<use ./plots/euler_5_yprime.png>
+Package pdftex.def Info: ./plots/euler_5_yprime.png  used on input line 218.
+(pdftex.def)             Requested size: 204.85846pt x 153.6002pt.
+<./plots/euler_50_yprime.png, id=70, 562.2606pt x 421.575pt>
+File: ./plots/euler_50_yprime.png Graphic file (type png)
+<use ./plots/euler_50_yprime.png>
+Package pdftex.def Info: ./plots/euler_50_yprime.png  used on input line 221.
+(pdftex.def)             Requested size: 204.85846pt x 153.6002pt.
+<./plots/rk4_5_yprime.png, id=71, 562.2606pt x 421.575pt>
+File: ./plots/rk4_5_yprime.png Graphic file (type png)
+<use ./plots/rk4_5_yprime.png>
+Package pdftex.def Info: ./plots/rk4_5_yprime.png  used on input line 224.
+(pdftex.def)             Requested size: 204.85846pt x 153.6002pt.
+<./plots/rk4_50_yprime.png, id=72, 562.2606pt x 421.575pt>
+File: ./plots/rk4_50_yprime.png Graphic file (type png)
+<use ./plots/rk4_50_yprime.png>
+Package pdftex.def Info: ./plots/rk4_50_yprime.png  used on input line 227.
+(pdftex.def)             Requested size: 204.85846pt x 153.6002pt.
+
 
 Package fancyhdr Warning: \headheight is too small (18.125pt): 
 (fancyhdr)                Make it at least 27.11469pt, for example:
@@ -926,39 +934,23 @@ Package fancyhdr Warning: \headheight is too small (18.125pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-8.98969pt}.
 
-[11]
-
-Package fancyhdr Warning: \headheight is too small (18.125pt): 
-(fancyhdr)                Make it at least 27.11469pt, for example:
-(fancyhdr)                \setlength{\headheight}{27.11469pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-8.98969pt}.
-
-[12])
-
-Package fancyhdr Warning: \headheight is too small (18.125pt): 
-(fancyhdr)                Make it at least 27.11469pt, for example:
-(fancyhdr)                \setlength{\headheight}{27.11469pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-8.98969pt}.
-
-[13] (./report.aux)
+[6 <./plots/euler_5_yprime.png (PNG copy)> <./plots/euler_50_yprime.png (PNG copy)> <./plots/rk4_5_yprime.png (PNG copy)> <./plots/rk4_50_yprime.png (PNG copy)>] (./report.aux)
 Package rerunfilecheck Info: File `report.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 22186 strings out of 476025
- 387735 string characters out of 5790018
- 2003388 words of memory out of 5000000
- 42060 multiletter control sequences out of 15000+600000
- 530736 words of font info for 80 fonts, out of 8000000 for 9000
+ 21120 strings out of 476025
+ 377849 string characters out of 5790018
+ 1861388 words of memory out of 5000000
+ 41203 multiletter control sequences out of 15000+600000
+ 530897 words of font info for 79 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 108i,15n,106p,10717b,2016s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm0600.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfsx1440.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfsx1728.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfsx2488.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb>
-Output written on report.pdf (13 pages, 1994343 bytes).
+ 108i,15n,106p,10717b,491s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfsx1440.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfsx1728.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfsx2488.pfb>
+Output written on report.pdf (6 pages, 1646292 bytes).
 PDF statistics:
- 431 PDF objects out of 1000 (max. 8388607)
- 365 compressed objects within 4 object streams
- 221 named destinations out of 1000 (max. 500000)
- 69 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 152 PDF objects out of 1000 (max. 8388607)
+ 90 compressed objects within 1 object stream
+ 20 named destinations out of 1000 (max. 500000)
+ 106 words of extra memory for PDF output out of 10000 (max. 10000000)
 
