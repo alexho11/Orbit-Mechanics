@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.5.6)  11 JAN 2024 11:38
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.1.12)  12 JAN 2024 20:35
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -504,9 +504,9 @@ Package: verbatim 2022-07-02 v1.5u LaTeX2e package for verbatim enhancements
 Package: catchfile 2019/12/09 v1.8 Catch the contents of a file (HO)
 )
 \verbatim@out=\write4
-runsystem(echo t > "w18-test-2024111698.tex")...disabled (restricted).
+runsystem(echo t > "w18-test-20241121235.tex")...disabled (restricted).
 
-runsystem(del "w18-test-2024111698.tex")...disabled (restricted).
+runsystem(del "w18-test-20241121235.tex")...disabled (restricted).
 
 
 
@@ -847,25 +847,25 @@ Package pdftex.def Info: ./plots/ode45_50_yprime_RSW.png  used on input line 155
 <./plots/ode23_5_yprime_d.png, id=48, 562.2606pt x 421.575pt>
 File: ./plots/ode23_5_yprime_d.png Graphic file (type png)
 <use ./plots/ode23_5_yprime_d.png>
-Package pdftex.def Info: ./plots/ode23_5_yprime_d.png  used on input line 173.
+Package pdftex.def Info: ./plots/ode23_5_yprime_d.png  used on input line 174.
 (pdftex.def)             Requested size: 204.85846pt x 153.6002pt.
 <./plots/ode23_50_yprime_d.png, id=49, 562.2606pt x 421.575pt>
 File: ./plots/ode23_50_yprime_d.png Graphic file (type png)
 <use ./plots/ode23_50_yprime_d.png>
-Package pdftex.def Info: ./plots/ode23_50_yprime_d.png  used on input line 176.
+Package pdftex.def Info: ./plots/ode23_50_yprime_d.png  used on input line 177.
 (pdftex.def)             Requested size: 204.85846pt x 153.6002pt.
 <./plots/ode45_5_yprime_d.png, id=50, 562.2606pt x 421.575pt>
 File: ./plots/ode45_5_yprime_d.png Graphic file (type png)
 <use ./plots/ode45_5_yprime_d.png>
-Package pdftex.def Info: ./plots/ode45_5_yprime_d.png  used on input line 179.
+Package pdftex.def Info: ./plots/ode45_5_yprime_d.png  used on input line 180.
 (pdftex.def)             Requested size: 204.85846pt x 153.6002pt.
 <./plots/ode45_50_yprime_d.png, id=51, 562.2606pt x 421.575pt>
 File: ./plots/ode45_50_yprime_d.png Graphic file (type png)
 <use ./plots/ode45_50_yprime_d.png>
-Package pdftex.def Info: ./plots/ode45_50_yprime_d.png  used on input line 182.
+Package pdftex.def Info: ./plots/ode45_50_yprime_d.png  used on input line 183.
 (pdftex.def)             Requested size: 204.85846pt x 153.6002pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 166--184
+Underfull \hbox (badness 10000) in paragraph at lines 167--185
 
  []
 
@@ -880,22 +880,22 @@ Package fancyhdr Warning: \headheight is too small (18.125pt):
 <./plots/ode23_5_yprime_d_RSW.png, id=58, 562.2606pt x 421.575pt>
 File: ./plots/ode23_5_yprime_d_RSW.png Graphic file (type png)
 <use ./plots/ode23_5_yprime_d_RSW.png>
-Package pdftex.def Info: ./plots/ode23_5_yprime_d_RSW.png  used on input line 189.
+Package pdftex.def Info: ./plots/ode23_5_yprime_d_RSW.png  used on input line 190.
 (pdftex.def)             Requested size: 204.85846pt x 153.6002pt.
 <./plots/ode23_50_yprime_d_RSW.png, id=59, 562.2606pt x 421.575pt>
 File: ./plots/ode23_50_yprime_d_RSW.png Graphic file (type png)
 <use ./plots/ode23_50_yprime_d_RSW.png>
-Package pdftex.def Info: ./plots/ode23_50_yprime_d_RSW.png  used on input line 192.
+Package pdftex.def Info: ./plots/ode23_50_yprime_d_RSW.png  used on input line 193.
 (pdftex.def)             Requested size: 204.85846pt x 153.6002pt.
 <./plots/ode45_5_yprime_d_RSW.png, id=60, 562.2606pt x 421.575pt>
 File: ./plots/ode45_5_yprime_d_RSW.png Graphic file (type png)
 <use ./plots/ode45_5_yprime_d_RSW.png>
-Package pdftex.def Info: ./plots/ode45_5_yprime_d_RSW.png  used on input line 195.
+Package pdftex.def Info: ./plots/ode45_5_yprime_d_RSW.png  used on input line 196.
 (pdftex.def)             Requested size: 204.85846pt x 153.6002pt.
 <./plots/ode45_50_yprime_d_RSW.png, id=61, 562.2606pt x 421.575pt>
 File: ./plots/ode45_50_yprime_d_RSW.png Graphic file (type png)
 <use ./plots/ode45_50_yprime_d_RSW.png>
-Package pdftex.def Info: ./plots/ode45_50_yprime_d_RSW.png  used on input line 198.
+Package pdftex.def Info: ./plots/ode45_50_yprime_d_RSW.png  used on input line 199.
 (pdftex.def)             Requested size: 204.85846pt x 153.6002pt.
 
 
@@ -905,26 +905,26 @@ Package fancyhdr Warning: \headheight is too small (18.125pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-8.98969pt}.
 
-[5 <./plots/ode23_5_yprime_d.png (PNG copy)> <./plots/ode23_50_yprime_d.png (PNG copy)> <./plots/ode45_5_yprime_d.png (PNG copy)> <./plots/ode45_50_yprime_d.png (PNG copy)> <./plots/ode23_5_yprime_d_RSW.png (PNG copy)> <./plots/ode23_50_yprime_d_RSW.png (PNG copy)> <./plots/ode45_5_yprime_d_RSW.png (PNG copy)> <./plots/ode45_50_yprime_d_RSW.png (PNG copy)>]
-<./plots/euler_5_yprime.png, id=69, 562.2606pt x 421.575pt>
+[5 <./plots/ode23_5_yprime_d.png (PNG copy)> <./plots/ode23_50_yprime_d.png (PNG copy)> <./plots/ode45_5_yprime_d.png (PNG copy)> <./plots/ode45_50_yprime_d.png (PNG copy)>]
+<./plots/euler_5_yprime.png, id=67, 562.2606pt x 421.575pt>
 File: ./plots/euler_5_yprime.png Graphic file (type png)
 <use ./plots/euler_5_yprime.png>
-Package pdftex.def Info: ./plots/euler_5_yprime.png  used on input line 218.
+Package pdftex.def Info: ./plots/euler_5_yprime.png  used on input line 219.
 (pdftex.def)             Requested size: 204.85846pt x 153.6002pt.
-<./plots/euler_50_yprime.png, id=70, 562.2606pt x 421.575pt>
+<./plots/euler_50_yprime.png, id=68, 562.2606pt x 421.575pt>
 File: ./plots/euler_50_yprime.png Graphic file (type png)
 <use ./plots/euler_50_yprime.png>
-Package pdftex.def Info: ./plots/euler_50_yprime.png  used on input line 221.
+Package pdftex.def Info: ./plots/euler_50_yprime.png  used on input line 222.
 (pdftex.def)             Requested size: 204.85846pt x 153.6002pt.
-<./plots/rk4_5_yprime.png, id=71, 562.2606pt x 421.575pt>
+<./plots/rk4_5_yprime.png, id=69, 562.2606pt x 421.575pt>
 File: ./plots/rk4_5_yprime.png Graphic file (type png)
 <use ./plots/rk4_5_yprime.png>
-Package pdftex.def Info: ./plots/rk4_5_yprime.png  used on input line 224.
+Package pdftex.def Info: ./plots/rk4_5_yprime.png  used on input line 225.
 (pdftex.def)             Requested size: 204.85846pt x 153.6002pt.
-<./plots/rk4_50_yprime.png, id=72, 562.2606pt x 421.575pt>
+<./plots/rk4_50_yprime.png, id=70, 562.2606pt x 421.575pt>
 File: ./plots/rk4_50_yprime.png Graphic file (type png)
 <use ./plots/rk4_50_yprime.png>
-Package pdftex.def Info: ./plots/rk4_50_yprime.png  used on input line 227.
+Package pdftex.def Info: ./plots/rk4_50_yprime.png  used on input line 228.
 (pdftex.def)             Requested size: 204.85846pt x 153.6002pt.
 
 
@@ -934,23 +934,31 @@ Package fancyhdr Warning: \headheight is too small (18.125pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-8.98969pt}.
 
-[6 <./plots/euler_5_yprime.png (PNG copy)> <./plots/euler_50_yprime.png (PNG copy)> <./plots/rk4_5_yprime.png (PNG copy)> <./plots/rk4_50_yprime.png (PNG copy)>] (./report.aux)
+[6 <./plots/ode23_5_yprime_d_RSW.png (PNG copy)> <./plots/ode23_50_yprime_d_RSW.png (PNG copy)> <./plots/ode45_5_yprime_d_RSW.png (PNG copy)> <./plots/ode45_50_yprime_d_RSW.png (PNG copy)>]
+
+Package fancyhdr Warning: \headheight is too small (18.125pt): 
+(fancyhdr)                Make it at least 27.11469pt, for example:
+(fancyhdr)                \setlength{\headheight}{27.11469pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-8.98969pt}.
+
+[7 <./plots/euler_5_yprime.png (PNG copy)> <./plots/euler_50_yprime.png (PNG copy)> <./plots/rk4_5_yprime.png (PNG copy)> <./plots/rk4_50_yprime.png (PNG copy)>] (./report.aux)
 Package rerunfilecheck Info: File `report.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 21120 strings out of 476025
- 377849 string characters out of 5790018
+ 21121 strings out of 476025
+ 377858 string characters out of 5790017
  1861388 words of memory out of 5000000
  41203 multiletter control sequences out of 15000+600000
  530897 words of font info for 79 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  108i,15n,106p,10717b,491s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfsx1440.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfsx1728.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfsx2488.pfb>
-Output written on report.pdf (6 pages, 1646292 bytes).
+Output written on report.pdf (7 pages, 1647208 bytes).
 PDF statistics:
- 152 PDF objects out of 1000 (max. 8388607)
- 90 compressed objects within 1 object stream
- 20 named destinations out of 1000 (max. 500000)
+ 158 PDF objects out of 1000 (max. 8388607)
+ 95 compressed objects within 1 object stream
+ 21 named destinations out of 1000 (max. 500000)
  106 words of extra memory for PDF output out of 10000 (max. 10000000)
 
