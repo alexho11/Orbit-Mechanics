@@ -155,7 +155,7 @@ The results are shown in the following figures:
     \includegraphics[width=1\textwidth]{./plots/ode45_50_yprime_RSW.png}
     \end{subfigure}
     \end{figure}
-    We can see that the error is mostly in the radial direction. The error in the along-track and cross-track directions are relatively small. Compare the two different step sizes, we can see that the error in the radial direction is smaller with smaller step size. 
+    We can see that the error is mostly in the along-track (S) direction. The error in the radial (R) and cross-track (W) directions are relatively small. Compare the two different step sizes, we can see that the error in the radial direction is smaller with smaller step size. 
     \section*{Disturbed Orbit}
     Now we want to add the perturbation of the Earth's oblateness to the equations of motion. The perturbation of the Earth's oblateness is given by:
     \begin{equation*}
@@ -165,7 +165,7 @@ The results are shown in the following figures:
             z\left(5\left(\frac{z}{r}\right)^2-3\right)
         \end{pmatrix}
     \end{equation*}
-    where $J_2$ is the second zonal harmonic coefficient, $a_e$ is the equatorial radius of the Earth and $r=\sqrt{x^2+y^2+z^2}$.
+    where $J_2$ is the harmonic coefficient describing Earth oblateness, $a_e$ is the equatorial radius of the Earth and $r=\sqrt{x^2+y^2+z^2}$.
     \\\\
     The results of the numerical integration with the perturbation of the Earth's oblateness are shown in the following figures:
     \begin{figure}[H]
@@ -183,7 +183,10 @@ The results are shown in the following figures:
         \includegraphics[width=1\textwidth]{./plots/ode45_50_yprime_d.png}
         \end{subfigure}
     \end{figure}
+    In the figures, we can see that unlike the undisturbed orbit, the method od the numerical integration does not make a big difference, the results of both \textbf{ode23} and \textbf{ode45} are similar. 
+    Compare to the undisturbed orbit, we can see that the difference between analytical solution and numerical integration is larger. For the \textbf{ode23} with step size of 5, the max. difference in position increases from 5m to about 50 km. For the \textbf{ode45} with step size of 5, the max. difference in position increases from less than 1mm to about 50 km. For the \textbf{ode23} with step size of 50, the max.\ difference in position increases from 5km to about 50 km. For the \textbf{ode45} with step size of 50, the max. difference in position increases from 0.2m to about 50 km. The difference in the velocity is also larger than the undisturbed orbit. The differences in undisturbed are all less than 1m/s except for the \textbf{ode23} with step size of 50, which is about 5m/s. The differences in the disturbed orbit are all larger than 1m/s, about 100m/s no mater which method and step size we use.
     \subsection*{In RSW frame}
+    Analogous to the undisturbed orbit, we can also decompose the error in the RSW system. The results are shown in the following figures:
     \begin{figure}[H]
         \centering
         \begin{subfigure}[b]{0.45\textwidth}
@@ -199,6 +202,8 @@ The results are shown in the following figures:
         \includegraphics[width=1\textwidth]{./plots/ode45_50_yprime_d_RSW.png}
         \end{subfigure}
     \end{figure} 
+    In the undisturbed case, we drawed a conclusion that the difference is mostly in the along-track (S) direction, which is still the case for the disturbed orbit. However, the difference in the radial (R) and cross-track (W) directions are also larger than the undisturbed orbit. The max.\ difference in the along-track (S) direction can reach 100km. The max.\ difference in the cross-track (W) direction can reach 10km. 
+    The difference in the radial direction is larger than 100m, which is about 100 times larger than the undisturbed orbit. The difference in the cross-track direction is larger than 10km.
 \section*{Own Implementation of the Numerical Integration}
 Now we want to implement our own numerical integration function. A simple case is to use Euler method to solve the differential equation. The Euler method is given by:
 \begin{align*}
@@ -228,5 +233,6 @@ The results of the numerical integration with the Euler method and Runge-Kutta m
     \includegraphics[width=1\textwidth]{./plots/rk4_50_yprime.png}
     \end{subfigure}
 \end{figure}
-
+From the formulas of Euler and Runge-Kutta method of order 4, we can determin that the results of rk4 should be much better than Euler method, because the Runge-Kutta method of order four requires four evaluations per step, whereas Euler method requires only one evaluation. And the results are as expected. We can see that even with a step size of 5, the position difference of Euler method can reach 1000km, which is about $10^10$ times larger than the Runge-Kutta method of order 4 with the same step size. 
+For Runge-Kutta method of order 4, even with a large step size of 50, the largest position difference is still less than 40m. The velocity difference is less than 0.05m/s, which is a very high precision.
 \end{document}

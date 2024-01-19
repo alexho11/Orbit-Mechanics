@@ -81,10 +81,10 @@ for j = 1:length(methods)
     ax=gca;
     ax.FontSize=13;
     ax.FontWeight="bold";
-    title(['Position ',method, ' with ',num2str(step),' steps'],'FontSize',15);
+    title(['Position ',method, ' with ',num2str(step),' steps'],'FontSize',20);
     legend('x','y','z');
-    xlabel('time(s)','FontSize',12,'FontWeight','bold');
-    ylabel('Diffenernce(m)','FontSize',12,'FontWeight','bold');
+    xlabel('time(s)','FontSize',15,'FontWeight','bold');
+    ylabel('Diffenernce(m)','FontSize',15,'FontWeight','bold');
 
     subplot(2,1,2);
     hold on;
@@ -94,10 +94,10 @@ for j = 1:length(methods)
     ax=gca;
     ax.FontSize=13;
     ax.FontWeight="bold";
-    title(['Velocity ',method, ' with ',num2str(step),' steps'],'FontSize',15);
+    title(['Velocity ',method, ' with ',num2str(step),' steps'],'FontSize',20);
     legend('x','y','z');
-    xlabel('time(s)','FontSize',12,'FontWeight','bold');
-    ylabel('Diffenernce(m/s)','FontSize',12,'FontWeight','bold'); 
+    xlabel('time(s)','FontSize',15,'FontWeight','bold');
+    ylabel('Diffenernce(m/s)','FontSize',15,'FontWeight','bold'); 
     saveas(gcf,['./plots/',method,'_',num2str(step),'_yprime.png']);
 end
 
@@ -204,9 +204,9 @@ function plot_RSW(solvers,options,t,e_r,e_s,e_w,DR,yprime)
         for j = 1:length(options)
             option = options{j};
             
-            d_R=dot(DR{i,j},e_r);
-            d_S=dot(DR{i,j},e_s);
-            d_W=dot(DR{i,j},e_w);
+            d_R=dot(e_r,DR{i,j});
+            d_S=dot(e_s,DR{i,j});
+            d_W=dot(e_w,DR{i,j});
 
             % Check if yprime is equal to yprime_d
             if strcmp(func2str(yprime), 'yprime_d')
